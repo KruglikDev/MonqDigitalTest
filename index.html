@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Ubuntu:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body onload="setTheme()">
+    <div class="container">
+        <main class="main">
+            <h1 class="title">
+                Preferences
+            </h1>
+            <p class="subtitle">
+                On this page you can configure the main system parameters available for customization
+            </p>
+
+            <form class="form">
+                <div class="form__inner-container">
+                    <div class="row">
+                        <label class="row__title">
+                            Company Title
+                        </label>
+                        <input type="text" name="title" class="row__input" value="Star and Moon" placeholder="Default"/>
+                    </div>
+
+                    <div class="row">
+                        <p class="row__title">First Day</p>
+                        <div class="row__right">
+                            <div class="row__options-container">
+                                <div class="row__option">
+                                    <input type="radio" class="row__radio" id="sports" name="category" />
+                                    <label for="sports">Monday</label>
+                                </div>
+
+                                <div class="row__option">
+                                    <input type="radio" class="row__radio" id="news" name="category" />
+                                    <label for="news">Sunday</label>
+                                </div>
+
+                                <div class="row__option">
+                                    <input type="radio" class="row__radio" id="tutorials" name="category" />
+                                    <label for="tutorials">System</label>
+                                </div>
+                            </div>
+
+                            <div class="row__selected">
+                                Monday
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <p class="row__title">Container Width</p>
+                        <div class="row__right">
+                            <div class="row__options-container">
+                                <div class="row__option">
+                                    <input type="radio" class="row__radio" id="width" name="width" />
+                                    <label for="width">Fixed</label>
+                                </div>
+                            </div>
+
+                            <div class="row__selected">
+                                Fixed
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <p class="row__title">Homepage</p>
+                        <div class="row__right">
+                            <div class="row__options-container">
+                                <div class="row__option">
+                                    <input type="radio" class="row__radio" id="homepage" name="homepage" />
+                                    <label for="homepage">Starred Projects</label>
+                                </div>
+                            </div>
+
+                            <div class="row__selected">
+                                Starred Projects
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <label for="indent" class="row__title">
+                            Indent Size
+                        </label>
+                        <input type="text" name="indent" id="indent" placeholder="Default" class="row__input"/>
+                    </div>
+
+                    <div class="row">
+                        <legend class="row__title">Personal Code</legend>
+                        <div class="row__group-and-text">
+                            <div class="row__group">
+                                <input class="row__input row__input_multiple" name="min" value="1645"/>
+                                <p class="row__dash">-</p>
+                                <input class="row__input row__input_multiple" name="max" value="1566"/>
+                                <p class="row__dash">-</p>
+                                <input class="row__input row__input_multiple" name="max" value="1249"/>
+                            </div>
+                            <p class="row__validation-text">
+                                12 digits
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <p class="row__title">
+                            Theme
+                        </p>
+
+                        <div class="row__radio-buttons">
+                            <div class="row__radio-button">
+                                <input type="radio" id="light-theme"
+                                       name="theme" value="light" checked>
+                                <label for="light-theme">Light</label>
+                            </div>
+
+                            <div class="row__radio-button">
+                                <input type="radio" id="dark-theme"
+                                       name="theme" value="dark">
+                                <label for="dark-theme">Dark</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="buttons">
+                    <button type="submit" class="buttons__btn buttons__btn_submit">
+                        Apply and Save
+                    </button>
+
+                    <button type="button" class="buttons__btn buttons__btn_cancel">
+                        Cancel
+                    </button>
+                </div>
+
+            </form>
+        </main>
+
+        <img src="./hero-image.png" alt="background image" class="hero-image">
+
+        <footer class="footer">
+            <time class="footer__text">
+                2020-2022
+            </time>
+
+            <a href="/" class="footer__link">
+                Terms of Service
+            </a>
+
+            <p class="footer__text">
+                and
+            </p>
+
+            <a href="/" class="footer__link">
+                Conditions
+            </a>
+        </footer>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
